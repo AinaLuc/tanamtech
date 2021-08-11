@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "tanamtech",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
