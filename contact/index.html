@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Guide pour faire la refonte de son site en 2021</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Refonte en 2021</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-6">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<!-- <h3>Download Now</h3> -->
+									<p class="mb-4 title">Refonte de site web en 2021: Ce que vous devez savoir!</p>
+									<!-- <div id="form-message-warning" class="mb-4"></div>  -->
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<div class="row mb-4">
+										<div class="col-md-8">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <p>Dans ce guide, vous allez voir: 
+											<ul>
+												<li> <strong> une stratégie cruciale à prendre en compte </strong>
+									</li>
+												<li>comment mettre l'accent sur l'expérience utilisateur</li>
+												<li>comment optimiser son site à travers les contenus et bien d'autres</li>
+											</ul>
+										</p>
+							          </div>
+						          </div>
+										</div>
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <!-- <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p> -->
+							          </div>
+						          </div>
+										</div>
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <!-- <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p> -->
+							          </div>
+						          </div>
+										</div>
+									</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"> -->
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<!-- <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here"></textarea> -->
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Télécharger" class="btn btn-primary">
+													<!-- <div class="submitting"></div> -->
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="w-100 social-media mt-5">
+									<!-- 	<h3>Follow us here</h3> -->
+										<p>
+											<!-- <a href="#">Facebook</a>
+											<a href="#">Twitter</a>
+											<a href="#">Instagram</a>
+											<a href="#">Dribbble</a> -->
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5 img" style="background-image: url(images/refonte.png);">
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#contactForm').on('submit', function(event) {
+	  event.preventDefault(); // prevent reload
+	  
+	  var formData = new FormData(this);
+	  formData.append('service_id', 'service_h5a5slc');
+	  formData.append('template_id', 'template_lablt4u');
+	  formData.append('user_id', 'user_JmA6FBWBrleyLq7AQQzHo');
+	  //
+  
+	  $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+		  type: 'POST',
+		  data: formData,
+		  contentType: false, // auto-detection
+		  processData: false // no need to parse formData to string
+	  }).done(function() {
+		window.location.href = "../guide";
+  /* $('.modal').modal('show');
+	  }).fail(function(error) {
+		  alert('Oops... ' + JSON.stringify(error));
+	  }); */
+  })})
+</script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
